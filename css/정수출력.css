@@ -1,0 +1,25 @@
+.body{
+    margin:0;
+    padding:0;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nbyn{
+    width: 400px;
+    font-size: 3em;
+    font-weight: 700;
+    color: white;
+    background-color: purple;
+    border-radius: 100px;
+    display:inline-block;
+    align-items: center;
+    border: 1px solid #eee;
+
+}
