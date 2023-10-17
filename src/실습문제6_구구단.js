@@ -1,0 +1,9 @@
+let i,j;
+for(i = 2; i <= 9; i++){
+    document.write("<table>");
+    document.write("<tr><th>" + i + "단</th></tr>");
+    for (j=1; j <=9; j++){
+        document.write("<tr><td>" + i + " x " + j + " = " + i*j + "</tr></td>");
+    }
+    document.write("</table>");
+}
