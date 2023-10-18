@@ -51,3 +51,23 @@ console.log(str.charCodeAt(0));
 let birthday = "1997-06-12";
 let arr2 = birthday.split("-"); // 하이픈(-)을 기준으로 문자열을 분리해서 배열로 
 console.log(arr2); // ["1997","06","02"]
+
+
+// Number 객체
+// Number.parseFloat() 메소드
+
+console.log(Number.parseFloat("12"));         // 12
+console.log(Number.parseFloat("12.34"));      // 12.34
+// -- 여기부턴 자바에서 오류나는 부분 --
+console.log(Number.parseFloat("12문자열"));   // 12
+console.log(Number.parseFloat("12 34 56"));   // 12
+console.log(Number.parseFloat("문자열 56")); // NaN
+
+
+console.log(Number.parseInt("12"));         // 12
+console.log(Number.parseInt("12.34"));      // 12
+console.log(Number.parseInt("12문자열"));   // 12
+console.log(Number.parseInt("12 34 56"));   // 12
+console.log(Number.parseInt("문자열 56"));  // NaN
+
+
