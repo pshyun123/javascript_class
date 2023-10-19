@@ -68,3 +68,4 @@ const person11 = new Person("안유진", 21, "서울시 강남구 역삼동", "�
 const person22 = new Person("장원영", 20, "서울시 강남구 청담동", "아이돌");
 console.log(person11);
 console.log(person22);
+

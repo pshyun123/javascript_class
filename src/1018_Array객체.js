@@ -81,3 +81,11 @@ console.log(pass);
 
 const local = persons.filter(person => person.city === "제주");
 console.log(local);
+
+
+// map() : 배열의 각 요소를 변환하고, 그 결과를 새로운 배열로 반환하는 배열 메서드
+// ???
+const numbers = [1,2,3,4,5,6,7,8,9,10];
+const squaredNumbers = numbers.map(num=> num * num); 
+console.log(squaredNumbers);
+
