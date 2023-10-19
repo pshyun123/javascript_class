@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/실습문제10_todo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>DOM 추가/삭제</h1>
+        <p>공부할 과목을 기록해 보세요.</p>
+        <p>공부가 끝난 과목은 클릭해서 삭제할 수 있습니다.</p>
+        <form action="">
+            <input type="text" id="subject" autofocus>
+            <!--autofocus 자동으로 텍스트 입력 가능-->
+            <button onclick="newRegister(); return false;">추가</button> 
+            <!-- button의 기본 기능(submit))을 return false;로 없애줌 -->
+        </form>
+        <ul id="itemList"></ul>
+    </div>
+    <script src="./src/실습문제10_todo.js"></script>
+</body>
+</html>

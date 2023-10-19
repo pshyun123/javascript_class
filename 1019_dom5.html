@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" name="frm">
+        <input type="text" name="id">
+        <input type="password" name="pw">
+    </form>
+    <!-- <form action="">
+        <label for="apple"><input type="checkbox" id="apple" value="apple">사과</label>
+        <label for="banana"><input type="checkbox" id="banana" value="banana">바나나</label>
+        <label for="orange"><input type="checkbox" id="orange" value="orange">오렌지</label>
+        <label for="cherry"><input type="checkbox" id="cherry" value="cherry">체리</label>
+    </form> -->
+    <form action="">
+        <label for="apple"><input type="radio" name="fruits" id="apple" value="apple">사과</label>
+        <label for="banana"><input type="radio" name="fruits" id="banana" value="banana">바나나</label>
+        <label for="orange"><input type="radio" name="fruits" id="orange" value="orange">오렌지</label>
+        <label for="cherry"><input type="radio" name="fruits" id="cherry" value="cherry">체리</label>
+    </form>
+    <!-- <script>
+        const aEl = document.createElement("a"); // 생성 : a태그 노드 생성
+        document.body.appendChild(aEl); // 연결 : 문서의 바디에 자식을 붙여줘
+        aEl.setAttribute("href", "http://naver.com")
+        aEl.innerHTML = "네이버 추가";
+    </script> -->
+    <!-- <script>
+        document.frm.id.value = "짱구";
+        document.frm.pw.value = "asdf1234"
+    </script> -->
+    <script>
+        const ckEls = document.querySelectorAll("[type='checkbox']");
+        for(let i = 0; i < ckEls.length; i++){
+            // ckEls[i].checked = true;
+            if(ckEls[i].value === "orange") ckEls[i].checked = true;
+        }
+    </script>
+</body>
+</html>
