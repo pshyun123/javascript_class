@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #title{
+            font-size: 1.5em;
+            color: darkblue;
+        }
+        .text {
+            font-size: 1.3em;
+            color: rgb(3, 88, 88);
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="title">title</h1>
+    <p class="text">text-1</p>
+    <p class="text">text-2</p>
+    <script>
+        // id 속성값으로 요소 선택
+        const title = document.getElementById("title");
+        console.log(title);
+        
+        // class 속성값으로 요소 선택(유사배열 형태로 담김)
+        const textEl = document.getElementsByClassName("text");
+        console.log(textEl);
+        // 향상된 for 문처럼
+        for(let e of textEl) console.log(e);
+
+        //태그에 해당하는 요소 노드 선택
+        const tagEl = document.getElementsByTagName("p");
+        console.log(tagEl);
+        for(let e of tagEl) console.log(e);
+
+    </script>
+</body>
+
+</html>
