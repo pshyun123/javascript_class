@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 인라인 방식으로 이벤트 등록하기 -->
+    <button onclick="clickEvent()">클릭</button>
+    <button id="btnEvent">이벤트 등록</button>
+    <input type="text" id="input-box" onfocus="FocusEvent()" onblur="blurEvent()">
+    <!-- focus가 빠지면 blurevent 발생 -->
+    <script>
+        function clickEvent(){
+            alert("click");
+        }
+        function FocusEvent(){
+            const inputBox = document.querySelector("#input-box");
+            inputBox.style.backgroundColor = "orange";
+        }
+        function blurEvent(){
+            const inputBox = document.querySelector("#input-box");
+            inputBox.style.backgroundColor = "green";
+
+        }
+        // 2. 프로퍼티 리스너 방식으로 이벤트 등록(잘 안 씀)
+        btn = document.querySelector("button");
+        btn.onclick = () => alert("화살표 함수");
+
+        // 3. 이벤트 등록 메서드로 이벤트 등록(자주 사용)
+        const btnEvent = document.querySelector("#btn-event");
+        btnEvent.addEventListener("click", function() {
+            alert("이벤트 등록버튼");
+        });
+
+    </script>
+</body>
+</html>

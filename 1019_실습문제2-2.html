@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트 이벤트</title>
+    <style>
+        #container{
+            display: flex;
+            justify-content: center;
+        }
+        body{
+            margin:0;
+            padding:0;
+    
+        }
+        .box{
+            width: 140px;
+            height: 40px;
+            margin:5px;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .green{
+            background-color: green;
+            color:white;
+            font-weight: bold;
+        }
+        .orange{
+            background-color: orange;
+            color:white;
+            font-weight: bold;
+        }
+        .purple{
+            background-color: purple;
+            color:white;
+            font-weight: bold;
+        }
+        #result {
+	    width: 500px;
+	    height: 300px;
+	    margin: 30px auto;
+	    border: 2px solid #ccc;
+	    border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <p class="box green" onclick="changeB('green')">Green</p>
+        <p class="box orange" onclick="changeB('orange')">Orange</p>
+        <p class="box purple" onclick="changeB('purple')">Purple</p>
+   </div>
+   <div id="result"></div>
+
+   <script>
+    function changeB(color){
+        let result = document.querySelector('#result');
+        result.style.backgroundColor = color;
+    }
+   </script>
+</body>
+</html>
