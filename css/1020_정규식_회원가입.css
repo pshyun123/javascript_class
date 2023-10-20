@@ -1,0 +1,79 @@
+.div_block {
+	/* ui를 감싸는 div 태그에 flexbox 설정 */
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .text {
+  	/* 글자 크기 설정 */
+    font-size: 14px;
+    /* 글자 굵기 설정 */
+    font-weight: bold;
+    /* 글자 색 설정 */
+    color: #4b5563;
+    /* 텍스트 아래에 여백 설정 */
+    margin-bottom: 0.25rem;
+  }
+  .input {
+  	/* 입력창 테두리 굵기, 모양, 색 설정 */
+    border: 1px solid #cbd5e0;
+    /* 입력창의 꼭짓점 둥글게 처리 */
+    border-radius: 0.25rem;          
+    /* 입력창 안쪽에 여백 설정 */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    /* 입력창 색 설정 */
+    color: #4b5563;       
+    /* 입력창 길이 지정 */
+    width : 18.75rem;            
+  }
+  .warn_text {
+    /* 텍스트 안보이게 설정 */
+   visibility: hidden;
+
+   /* 텍스트 크기, 굵기, 색 설정 */
+   font-size: 12px;
+   font-weight: 600;
+   color: #EF4444;
+   /* 텍스트 위, 아래에 여백 설정 */
+   margin-top : 0.25rem;
+   margin-bottom: 1rem;
+ }
+
+ .btn {
+     /* 버튼 색상 */
+   background-color: #3B82F6;
+   /* 텍스트의 색상, 굵기 */
+   color: #fff;
+   font-weight: 700;
+   /* 버튼의 상/하/좌/우 여백 */
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   /* 버튼의 꼭짓점 둥글게 처리 */
+   border-radius: 0.25rem;    
+   /* 버튼색이 변할 때 0.2초의 딜레이 처리 */
+   transition: background-color 0.2s ease-out;
+ }
+
+ /* 버튼에 마우스 커서가 올라가 있을 때의 색깔 */
+ .btn:hover {
+   background-color: #2563EB;
+ }
+
+ /* 버튼을 클릭했을 때 버튼 주변에 그림자 생성 (클릭 되었다는거 알리는 용) */
+ .btn:focus {
+     /* 버튼 그림자의 색상(59, 130, 246)과 투명도(0.5) 지정  */
+   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+ }
+ 
+ /* 버튼이 비활성화 되어 있을 때 */
+ .btn:disabled {
+     /* 버튼의 투명도 설정 (0일수록 투명, 1일수록 불투명) */
+   opacity: 0.5;
+   /* 버튼이 마우스 이벤트를 받지 못하게 처리 */
+   pointer-events: none;
+ }

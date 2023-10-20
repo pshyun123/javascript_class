@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.wrap{
+    width: 400px;
+    padding: 50px;
+    margin: 100px;
+}
+p{
+    margin:0;
+    font-size: 12px;
+    color: red;
+    text-align: right;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+}
+.input_part{
+    margin: 0 10px 10px 0;
+}
+input {
+    display: flex;
+    width: 230px;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 6px;
+    border: 1px solid royalblue;
+}
+button{
+    width: 50px;
+    background-color: royalblue;
+    color:#fff;
+    font-weight: 800;
+    border-style: none;
+    border-radius: 6px;
+    height: 40px;
+}
+
+button:active{
+    position: relative;
+    top:1px;
+    left:1px;
+}
+.join{
+    width: 100%;
+}
