@@ -1,4 +1,5 @@
 #item {
+    /* 부모(사진)를 기준으로 위치. 기본은 static */
     position:relative;
     width:500px;
     height:auto;
@@ -13,12 +14,13 @@ button {
 }
 .over {
     position:absolute;
-    left:30px;
+    right:130px;
     bottom:30px;
 }
 .detail {
     width:400px;
     text-align:left;			
     line-height:1.8;
-    display:none;
+    display:none; 
+    /* 내용 가려질 수 있도록 */
 }

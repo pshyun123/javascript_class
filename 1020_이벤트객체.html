@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- KeyboardEvent 객체 확인 -->
+    <!-- <input type="text"> -->
+
+    <!-- 이벤트 객체를 이용해 속성 확인 -->
+    <!-- <button>클릭</button> -->
+
+    <!-- 이벤트 취소하기 -->
+    <!-- <a href="https://www.naver.com">네이버 이동</a>
+    <a href="https://www.daum.net">다음 이동</a> -->
+
+    <!-- 이벤트 취소하기2 -->
+    <input type="text" name="username">
+    <button type="submit">Submit</button>
+    <script>
+        // 이벤트 객체를 이용해 속성 확인
+        // const btnEl = document.querySelector("button");
+        // btnEl.addEventListener("click",function(event){
+        //     console.log(event.type); // 어떤 이벤트가 발생했는지 알 수 있다.
+        //     console.log(`clientX:${event.clientX}`);
+        //     console.log(`clientY :${event.clientY }`);
+        //     console.log(`pageX:${event.pageX}`);
+        //     console.log(`pageY:${event.pageY}`);
+        //     console.log(`screenX:${event.screenX}`);
+        //     console.log(`screenY :${event.screenY }`);
+        // });
+
+
+        // KeyboardEvent 객체 확인
+        // const inputEl = document.querySelector("input");
+        // inputEl.addEventListener("keydown", function(e){
+        //     console.log(`키보드 눌림 확인 : ${e.keyCode}`);
+        //     console.log(`ctrlKey:${event.ctrlKey}`);
+		// 	console.log(`altKey:${event.altKey}`);
+		// 	console.log(`shiftKey:${event.shiftKey}`);
+        // })
+
+        //이벤트 취소하기
+        // const aEls=document.querySelectorAll("a");
+        // for(let i = 0; i <aEls.length; i++){
+		// 	aEls[i].addEventListener("click", function(e){
+        //         // 기본 이벤트 취소: 기본기능을 없애서 이동이 안되는 경우 방지
+        //         e.preventDefault();
+        //         alert("네이버 이동");
+        //     });
+        // }
+
+        // 이벤트 취소하기2 
+        const form = document.getElementById('myForm');
+        form.addEventListener('submit', function(event) {
+        event.preventDefault(); // 폼 제출 기본 동작 막기
+        const username = form.elements.username.value; // 입력된 사용자 이름을 사용하여 다른 작업 수행
+        document.querySelector('input').value = "";
+        });
+
+    </script>
+</body>
+</html>
