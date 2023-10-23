@@ -1,0 +1,30 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "리액트",
+      "author": "패이스북",
+      "id": 2
+    },
+    {
+      "title": "리액트",
+      "author": "페이스북",
+      "addr": "서울시 강남구 역삼동",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
